@@ -1,0 +1,328 @@
+.main-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/ngo_pattern.png") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 300px;
+  padding: 1em 0;
+  text-align: center;
+  color: #30514b;
+}
+
+.register_header {
+  background: linear-gradient(rgb(122, 244, 88), rgb(124, 224, 96));
+  width: 50%;
+  height: 40%;
+  margin: 10% auto;
+  padding: 50px 50px;
+}
+
+.main-content {
+  width: 80%;
+  height: auto;
+  top: -100px;
+  margin: 20px auto;
+  padding: 30px 30px;
+  border: 2px solid #e52b5d;
+  border-radius: 5px;
+}
+
+.main-content header {
+  font-size: 30px;
+}
+.intro {
+  padding: 3em 1em;
+  text-align: center;
+  color: White;
+}
+
+/*Intro box style begins here*/
+.intro {
+  background-color: var(--secondary-color);
+}
+
+.intro img {
+  height: auto;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.ngo-default-img {
+  border-radius: 50%;
+  border: 1.5px white;
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  left: 36%;
+}
+/*Animations*/
+.fade-in-up {
+  animation-name: fade-in-up;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.long-fade-in {
+  animation-name: long-fade-in;
+  animation-duration: 4s;
+}
+
+.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.swing {
+  animation: swing infinite ease-in-out;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  transform-origin: top center;
+}
+
+.fast-fade-in-left {
+  animation-name: fast-fade-in-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fast-fade-in-right {
+  animation-name: fast-fade-in-right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.zoom-in {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+/*Animations*/
+
+/*Key frames*/
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes long-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delayed-fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fast-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fast-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Key frames*/
+
+.delay1 {
+  animation-delay: 100ms;
+}
+
+.delay2 {
+  animation-delay: 200ms;
+}
+
+.delay3 {
+  animation-delay: 300ms;
+}
+
+.delay4 {
+  animation-delay: 400ms;
+}
+
+.delay5 {
+  animation-delay: 500ms;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-container hr {
+    width: 30%;
+  }
+
+  /*main header*/
+  .main-header {
+    padding: 24em 2em 0;
+  }
+  .main-header-container {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  .intro {
+    padding: 10% 7%;
+  }
+
+  /*intro CSS */
+  .intro img {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .main-container h2 {
+    margin: 0;
+  }
+
+  /* Container CSS */
+  .intro {
+    text-align: left;
+  }
+
+  .intro {
+    padding: 10% 7%;
+  }
+
+  .intro hr,
+    /* .technological-skills hr, */
+    .social hr {
+    margin: 1em 0;
+    width: 50%;
+  }
+
+  /* Intro CSS */
+  .intro-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-container,
+  .intro-image-container {
+    flex: 1 50%;
+  }
+
+  .intro-container {
+    margin-right: 1em;
+  }
+
+  .intro-more-info {
+    border: 5px solid rgba(32, 178, 170, 0.6);
+    border-radius: 10px;
+    height: auto;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .intro {
+    padding: 6% 7%;
+  }
+
+  .main-header-container {
+    max-width: 1040px;
+  }
+
+  .intro-block,
+  .main-footer-container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .main-header-container {
+    max-width: 1040px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .main-header {
+    min-height: 500px;
+    padding-top: 35vh;
+  }
+}

@@ -1,0 +1,908 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+html,
+body {
+  /*overflow:hidden;*/
+  background-color: #fff;
+  color: #373a3c;
+  font-family: "Merienda", cursive;
+  font-size: 1em;
+  line-height: 1.5;
+  --main-color: lightseagreen;
+  --secondary-color: #d0d3d8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.7rem 0;
+}
+
+.main-container h2 {
+  margin-top: 1em;
+}
+
+.main-container hr {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1em auto;
+  width: 50%;
+}
+
+/* Main nav style */
+.main-nav {
+  background: rgba(21, 31, 33, 0.7);
+  transition: color 0.3s;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: fixed;
+  width: 100%;
+  text-transform: capitalize;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav li:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: color 0.3s;
+}
+
+.main-nav-img {
+  height: auto;
+  width: 100%;
+}
+
+.main-nav ul {
+  background-color: rgba(21, 31, 33, 0.5);
+  display: none;
+  font-size: 1.1em;
+  left: 0;
+  list-style: none;
+  padding: 1em;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.main-nav i {
+  cursor: pointer;
+}
+
+#resume-download-icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+/*Main nav style overs*/
+
+/*Main header style begins*/
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/cover.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 300px;
+  padding: 35vh 1em 0;
+  text-align: center;
+  color: #fff;
+}
+
+.main-header img {
+  width: 80%;
+}
+
+.main-header h1 {
+  text-transform: uppercase;
+}
+
+.main-header p {
+  font-size: 1.25rem;
+}
+
+.main-header i {
+  margin-top: 2.5rem;
+}
+
+.main-header-content {
+  padding-right: 40px;
+  /* perspective: 400px;
+    line-height: 1.5;
+    position:relative; */
+}
+/*Main header style ends*/
+
+/*Main container css*/
+.intro,
+.social,
+.technological-skills-block,
+.projects,
+.reasons-to-employ,
+.acheivement,
+.project-summary-container,
+.technologies-used-container,
+.maon-footer {
+  padding: 3em 1em;
+  text-align: center;
+}
+
+/*Intro box style begins here*/
+.intro {
+  background-color: var(--secondary-color);
+}
+
+.intro img {
+  height: auto;
+  margin-top: 2em;
+  width: 100%;
+}
+/*intro box style ends here*/
+
+/* Social CSS  begins*/
+.social {
+  background-color: var(--secondary-color);
+  background-image: cover;
+}
+
+.social-container {
+  color: var(--main-color);
+  display: flex;
+  flex-direction: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.625rem;
+}
+
+.social-container i {
+  border: 2px solid var(--main-color);
+  border-radius: 30%;
+  font-size: 1.6rem;
+  height: 3.75rem;
+  width: 3.75rem;
+  margin: 0.35rem;
+  padding-top: 0.9375rem;
+  transition: background-color 0.5s, color 0.5s, ease-in-out;
+}
+
+.social-container i:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* Social CSS ends */
+
+/*Technological skills*/
+.technological-skills {
+  background-color: #fff;
+}
+
+.technological-skills-container {
+  display: grid;
+  grid-gap: 3px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.technological-skills-block hr {
+  margin: auto;
+}
+.technological-skills-container p {
+  background-color: lightseagreen;
+  border: 1px solid lightskyblue;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6em;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.technological-skills-container p:hover {
+  background-color: #fff;
+  color: lightseagreen;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.technological-skills-container i {
+  margin-left: 1em;
+}
+
+.technological-skills-container p:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.technological-skills-container p:nth-child(2) {
+  grid-area: 1 / 3 / 2 / 5;
+}
+
+.technological-skills-container p:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.technological-skills-container p:nth-child(4) {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.technological-skills-container p:nth-child(5) {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.technological-skills-container p:nth-child(6) {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+.technological-skills-container p:nth-child(7) {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.technological-skills-container p:nth-child(8) {
+  grid-area: 4 / 3 / 5 / 5;
+}
+
+.technological-skills-container p:nth-child(9) {
+  grid-area: 5 / 1 / 6 / 5;
+}
+
+.technological-skills-container p:nth-child(10) {
+  grid-area: 6 / 3 / 7 / 5;
+}
+
+.technological-skills-container p:nth-child(11) {
+  grid-area: 6 / 1 / 7 / 5;
+}
+
+.technological-skills-container p:nth-child(12) {
+  grid-area: 7 / 1 / 8 / 3;
+}
+
+.technological-skills-container p:nth-child(13) {
+  grid-area: 7 / 3 / 8 / 5;
+}
+/*Technological skills ends here*/
+
+/*Reasons to employ begins here*/
+.reasons-to-employ {
+  background-color: var(--secondary-color);
+}
+
+.reasons-container {
+  margin: 2rem 0.5rem;
+}
+
+.reasons-to-employ i {
+  color: lightseagreen;
+  margin-bottom: 0.3em;
+}
+
+.reasons-to-employ .middle-reason {
+  margin-bottom: 0.3em;
+}
+/*Reasons to emply ends here*/
+
+/* Acheivements CSS */
+.acheivement-container {
+  overflow: hidden;
+}
+
+.acheivement-item {
+  border-left: 5px solid rgba(125, 125, 125, 0.1);
+  font-size: 1.2rem;
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+.acheivement-year {
+  font-size: 1rem;
+}
+
+.acheivement-switch {
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0.2rem;
+  outline: none;
+}
+
+.active-carousel-switch {
+  transform: scale(1.5);
+}
+/*Acheivements CSS ends */
+
+/*Main Footer */
+.main-footer {
+  background-color: #484848;
+  color: #fff;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-about-me-content {
+  margin-bottom: 1em;
+}
+
+.footer-about-me-content i {
+  margin-right: 10px;
+}
+
+.footer-social i {
+  margin: 0 0.5em;
+  transition: color 0.3s;
+}
+
+.footer-social i:hover {
+  color: #5bc0de;
+  transition: color 0.3s;
+}
+
+.footer-contact {
+  margin-top: 1em;
+}
+
+.footer-contact-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contact i {
+  margin-right: 0.5em;
+}
+
+footer p:last-child {
+  text-align: center;
+}
+/*Main Footer ends*/
+
+/*Links*/
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Animations*/
+.fade-in-up {
+  animation-name: fade-in-up;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+.long-fade-in {
+  animation-name: long-fade-in;
+  animation-duration: 4s;
+}
+
+.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.swing {
+  animation: swing infinite ease-in-out;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  transform-origin: top center;
+}
+
+.fast-fade-in-left {
+  animation-name: fast-fade-in-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fast-fade-in-right {
+  animation-name: fast-fade-in-right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.zoom-in {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+/*Animations*/
+
+/*Key frames*/
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes long-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes delayed-fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fast-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fast-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Key frames*/
+
+.delay1 {
+  animation-delay: 100ms;
+}
+
+.delay2 {
+  animation-delay: 200ms;
+}
+
+.delay3 {
+  animation-delay: 300ms;
+}
+
+.delay4 {
+  animation-delay: 400ms;
+}
+
+.delay5 {
+  animation-delay: 500ms;
+}
+
+/*Other css */
+.main-button {
+  background-color: lightseagreen;
+  border: 1px solid lightseagreen;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0.6rem;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  width: 50%;
+}
+
+.main-button:hover {
+  background-color: #fff;
+  color: lightseagreen;
+  border-color: lightseagreen;
+}
+
+.heavy {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.main-header-side-content,
+.hide {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+/*Other css ends */
+
+/*Media Queries*/
+@media only screen and (min-width: 600px) {
+  .main-container hr {
+    width: 30%;
+  }
+
+  /*main header*/
+  .main-header {
+    padding: 24em 2em 0;
+  }
+  .main-header-container {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  /*main nav*/
+  .main-nav {
+    padding: 0;
+  }
+
+  .main-nav i {
+    display: none;
+  }
+
+  .main-nav ul {
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 15px 25px;
+    position: static;
+    width: auto;
+    top: 0;
+  }
+
+  .main-nav li {
+    margin: 0 1em;
+  }
+
+  /* Technological Skills */
+  .technological-skills-container p:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .technological-skills-container p:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+
+  .technological-skills-container p:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .technological-skills-container p:nth-child(4) {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .technological-skills-container p:nth-child(5) {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+
+  .technological-skills-container p:nth-child(6) {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  /* Containers CSS */
+  .intro,
+  .social,
+  .technological-skills-block,
+  .projects,
+  .reasons-to-employ,
+  .acheivement,
+  .project-summary-container,
+  .technologies-used-container,
+  .main-footer {
+    padding: 10% 7%;
+  }
+
+  /*intro CSS */
+  .intro img {
+    margin: 0;
+  }
+
+  /* Main Footer CSS */
+  .main-footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-footer-content,
+  .main-footer-contact {
+    flex: 1 50%;
+    margin: 0px 100px;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .main-container h2 {
+    margin: 0;
+  }
+
+  /* Container CSS */
+  .intro,
+  .social-content-container,
+  .projects,
+  .main-footer-container {
+    text-align: left;
+  }
+
+  .intro,
+  .social,
+  .technological-skills-block,
+  .projects,
+  .reasons-to-employ,
+  .acheivement,
+  .project-summary-container,
+  .technologies-used-container,
+  .main-footer {
+    padding: 10% 7%;
+  }
+
+  .intro hr,
+  /* .technological-skills hr, */
+  .social hr {
+    margin: 1em 0;
+    width: 50%;
+  }
+
+  /*Main header*/
+  .main-header {
+    padding: 19rem 2em 0;
+  }
+
+  .main-header-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1040px;
+    text-align: left;
+  }
+
+  .main-header-content,
+  .main-header-side-content {
+    flex: 1 50%;
+  }
+
+  .main-header-img {
+    max-width: 80%;
+  }
+
+  .main-header-side-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  .main-header-side-content button {
+    background: none;
+    border: 1px solid #5bc0de;
+    border-radius: 6px;
+    color: #5bc0de;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 1em 0;
+    padding: 0.4rem;
+    transition: background-color 0.5s, color 0.5s;
+    width: 90%;
+  }
+
+  .main-header-side-content button:hover {
+    background-color: #5bc0de;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  /* Intro CSS */
+  .intro-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-container,
+  .intro-image-container {
+    flex: 1 50%;
+  }
+
+  .intro-container {
+    margin-right: 1em;
+  }
+
+  .intro-more-info {
+    border: 5px solid rgba(32, 178, 170, 0.6);
+    border-radius: 10px;
+    height: auto;
+    max-width: 90%;
+  }
+
+  /*reasons to employ block*/
+  .reasons-to-employ-block {
+    display: flex;
+  }
+
+  .reasons-container {
+    align-self: flex-end;
+    flex: 1 33%;
+  }
+
+  .reasons-container h3 {
+    font-size: 1.7rem;
+  }
+
+  /* social block */
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    margin-top: 0;
+  }
+
+  .acheivement-switch {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .intro,
+  .social,
+  .technological-skills-block,
+  .projects,
+  .reasons-to-employ,
+  .acheivement,
+  .project-summary-container,
+  .technologies-used-container,
+  .main-footer {
+    padding: 6% 7%;
+  }
+
+  .main-header-container {
+    max-width: 1040px;
+  }
+
+  .intro-block,
+      /* .social, */
+      .technological-skills-block,
+      .projects-content,
+      .projects-container,
+      .reasons-to-employ-content,
+      .reasons-to-employ-block,
+      .acheivement,
+      .project-summary-container,
+      .technologies-used-container,
+      .main-footer-container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .main-header-container {
+    max-width: 1040px;
+  }
+
+  /* Technological Skills */
+  .technological-skills-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .technological-skills-container p:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .technological-skills-container p:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 5;
+  }
+
+  .technological-skills-container p:nth-child(3) {
+    grid-area: 1 / 5 / 2 / 7;
+  }
+
+  .technological-skills-container p:nth-child(4) {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .technological-skills-container p:nth-child(5) {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+
+  .technological-skills-container p:nth-child(6) {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .main-header {
+    min-height: 500px;
+    padding-top: 35vh;
+  }
+}
+/*Media Queries*/

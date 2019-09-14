@@ -1,0 +1,95 @@
+.middle-reason {
+  height: 260px;
+}
+
+.flip-container-text {
+  margin-top: 100px;
+}
+
+.flip-container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  margin-top: 0px;
+  left: 50%;
+  top: 317%;
+  transform: translate(-50%, -317%);
+  perspective: 160px;
+  transform-style: preserve-3d;
+}
+
+.flip-container .paper {
+  width: 50px;
+  height: 65px;
+  position: absolute;
+  border: 5px solid lightseagreen;
+  background-color: #fff;
+  transform-origin: 0% 50%;
+  border-left: none;
+}
+
+/* line 29, ../sass/screen.scss */
+.container .paper:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(3) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 0.54931s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(4) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 0.69315s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(5) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 0.80472s;
+}
+/* line 34, ../sass/screen.scss */
+.container .paper:nth-child(6) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 0.89588s;
+}
+/* line 34, ../sass/screen.scss */
+.container .paper:nth-child(7) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 0.97296s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(8) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 1.03972s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(9) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 1.09861s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(10) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 1.15129s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(11) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 1.19895s;
+}
+/* line 34, ../sass/screen.scss */
+.flip-container .paper:nth-child(12) {
+  animation: flip 2.5s infinite ease-in-out;
+  animation-delay: 1.24245s;
+}
+
+@keyframes flip {
+  30% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="maincss.css" />
+    <link rel="stylesheet" type="text/css" href="loginpage.css" />
+  </head>
+  <body class="main-background">
+    <h2>Login Form</h2>
+
+    <form method="POST" action="verify.php">
+      <div class="imgcontainer">
+        <img src="images/account.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button
+          onclick="window.location.href='Welcome.php'"
+          type="button"
+          class="cancelbtn"
+        >
+          Cancel
+        </button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </body>
+</html>
